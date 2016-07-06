@@ -570,9 +570,14 @@ ActiveRecord::Schema.define(version: 20160705180591) do
 
   create_table "spree_properties", force: :cascade do |t|
     t.string   "name"
-    t.string   "presentation", null: false
+    t.string   "presentation",             null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "position"
+    t.integer  "lft",          default: 0, null: false
+    t.integer  "rgt",          default: 0, null: false
+    t.integer  "parent_id",    default: 0, null: false
+    t.integer  "depth",        default: 0, null: false
   end
 
   create_table "spree_property_prototypes", force: :cascade do |t|

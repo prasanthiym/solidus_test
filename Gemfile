@@ -36,7 +36,7 @@ gem 'solidus'
 gem 'solidus_auth_devise'
 
 # Changes Spree Taxonomies and Taxons to Catalogs and Categories
-gem 'solidus_categories' ,'1.2.0' , :github => 'prasanthiym/solidus_categories'
+gem 'solidus_categories' , :github => 'prasanthiym/solidus_categories' 
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

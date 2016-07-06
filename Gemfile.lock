@@ -1,8 +1,9 @@
 GIT
   remote: git://github.com/prasanthiym/solidus_categories.git
-  revision: 7f7983e1677b746b364c0d53e95f80ca05ced1c1
+  revision: b084269497336d48db437580f745dc23979b3a1d
   specs:
-    solidus_categories (1.2)
+    solidus_categories (2.3)
+      the_sortable_tree (~> 2.5.0)
 
 GEM
   remote: https://rubygems.org/
@@ -161,7 +162,7 @@ GEM
     premailer (1.8.7)
       css_parser (>= 1.4.5)
       htmlentities (>= 4.0.0)
-    premailer-rails (1.9.3)
+    premailer-rails (1.9.4)
       actionmailer (>= 3, < 6)
       premailer (~> 1.7, >= 1.7.9)
     rabl (0.11.8)
@@ -289,6 +290,8 @@ GEM
       activerecord (>= 4.1, < 5.1)
       state_machines-activemodel (>= 0.3.0)
     stringex (1.5.1)
+    the_sortable_tree (2.5.0)
+      rails (>= 3.1)
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.5)
@@ -331,7 +334,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   solidus
   solidus_auth_devise
-  solidus_categories (= 1.2.0)!
+  solidus_categories!
   spring
   sqlite3
   turbolinks
